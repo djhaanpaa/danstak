@@ -37,6 +37,6 @@ sudo mkdir -p /platform/bin
 sudo mkdir -p /platform/data
 sudo mkdir -p /platform/scripts
 sudo git clone https://github.com/djhaanpaa/danstak.git /platform/danstak
-setfacl -R -d -m u:dntsadmin:rwx /platform 
-setfacl -R -m u:dntsadmin:rwx /platform 
+sudo setfacl -R -d -m u:dntsadmin:rwx /platform 
+sudo setfacl -R -m u:dntsadmin:rwx /platform 
 
