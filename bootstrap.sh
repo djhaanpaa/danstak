@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 DISTRO_VER=$(lsb_release -r -s)
+echo "DANSTAK Install Script"
+echo "Using Distribution Release: $DISTRO_VER"
 
 #########################################
 # cleanup platform folder
