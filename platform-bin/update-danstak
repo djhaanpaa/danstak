@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /platform/danstak
+git pull
+cp -Rv /platform/danstak/platform-bin/* /platform/bin

@@ -34,9 +34,13 @@ rm -rf packages-microsoft-prod.deb
 # setup base platform folders
 sudo mkdir -p /platform
 sudo mkdir -p /platform/bin
+sudo mkdir -p /platform/sbin
 sudo mkdir -p /platform/data
 sudo mkdir -p /platform/scripts
 sudo git clone https://github.com/djhaanpaa/danstak.git /platform/danstak
 sudo setfacl -R -d -m u:dntsadmin:rwx /platform 
 sudo setfacl -R -m u:dntsadmin:rwx /platform 
 
+#########################################
+# setup platform bin folder
+sudo bash /platform/danstak/platform-bin/update-danstak
